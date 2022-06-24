@@ -1,0 +1,81 @@
+.header{
+  max-width: 1200px;
+  margin: auto;
+}
+.navContainer{
+padding: 2em;
+}
+
+.navContainer>nav>p{
+  font-weight: bold;
+  font-size: 2em;
+  color:blue;
+}
+
+.main {
+  
+}
+.uploadContainer{
+
+}
+.wrapper{
+display: grid;
+place-items: center;
+}
+.input{
+text-align: center;
+}
+.input>input{
+  display: none;
+}
+.fileName{
+  font-size: 1.8em;
+}
+
+
+
+
+.imageContainer{
+
+  margin:52px auto;
+  max-width: 1200px;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 26px 12px;
+}
+
+
+.images{
+width: 270px;
+}
+
+.progressBar{
+  background-color: red;
+  margin-top: 12px;
+  transition: all .4s ease-in-out;
+  height: 2px;
+  color: white;
+}
+
+@media screen and (max-width:1170px) {
+  .imageContainer{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media screen and (max-width:900px) {
+  .imageContainer{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .images{
+    width: 400px;
+    }
+}
+@media screen and (max-width:840px) {
+  .imageContainer{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .images{
+    width: 100%;
+    }
+}
